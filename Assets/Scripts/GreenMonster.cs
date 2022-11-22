@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class GreenMonster : EnemyScipt
+public class GreenMonster : Enemy
 {
     private GameObject _playerScript;
 
@@ -14,11 +14,7 @@ public class GreenMonster : EnemyScipt
         _currentHealth = _maxHealth;
     }
 
-    void Update()
-    {
-        Move();
-        
-    }
+    
 
     protected override void Move()
     {
@@ -38,6 +34,7 @@ public class GreenMonster : EnemyScipt
             _animator.SetBool("IsRunning", false);
         }
     }
+    
     
     
     

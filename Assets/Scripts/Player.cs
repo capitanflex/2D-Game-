@@ -1,10 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Drawing;
-using UnityEditor.VersionControl;
 using UnityEngine;
-using UnityEngine.UIElements;
 using Color = UnityEngine.Color;
 
 public class Player : MonoBehaviour
@@ -139,7 +135,7 @@ public class Player : MonoBehaviour
             StartCoroutine(attackAnimation());
             try
             {
-                CheckEnemy().GetComponent<EnemyScipt>().GetDamage(_damage);
+                CheckEnemy().GetComponent<Enemy>().GetDamage(_damage);
             }
             catch (NullReferenceException)
             {

@@ -1,21 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class WormMonster : EnemyScipt
+public class WormMonster : Enemy
 {
     
-    protected new void Start()
-    {
+    
 
-        _currentHealth = _maxHealth;
-    }
-
-    void Update()
-    {
-        Move();
-        
-    } 
+    
     
     
     protected override void Move()

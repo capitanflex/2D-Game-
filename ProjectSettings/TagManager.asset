@@ -15,9 +15,9 @@ TagManager:
   - UI
   - Ground
   - Enemy
-  - 
-  - 
-  - 
+  - Enemy_Projectile
+  - Player
+  - Player_Projectile
   - 
   - 
   - 
